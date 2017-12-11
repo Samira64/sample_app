@@ -37,6 +37,8 @@ GEM
       tzinfo (~> 1.1)
     ansi (1.5.0)
     arel (6.0.4)
+    autoprefixer-rails (7.2.2)
+      execjs
     bcrypt (3.1.11)
     binding_of_caller (0.7.3)
       debug_inspector (>= 0.0.1)
@@ -224,8 +226,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootstrap-sass (= 3.3.7)
+  autoprefixer-rails
   bcrypt
+  bootstrap-sass (= 3.3.7)
   byebug
   coffee-rails (~> 4.1.0)
   guard
@@ -243,6 +246,7 @@ DEPENDENCIES
   rake
   ruby-prof
   ruby_gntp
+  ruysl (~> 2.0)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring
