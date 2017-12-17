@@ -26,6 +26,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem "autoprefixer-rails"
 
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -63,10 +64,10 @@ group :test do
       gem 'ruby-prof'
 end
 
-platforms :rbx do
-  gem 'racc'
-  gem 'ruysl', '~> 2.0'
-  gem 'psych'
+group :production do
+      gem 'puma'
+      gem 'rails_12factor'
 end
+
 
 
