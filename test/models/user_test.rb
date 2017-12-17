@@ -1,4 +1,4 @@
-require 'test_helper'
+require './test/test_helper.rb'
 
 class UserTest < ActiveSupport::TestCase
     def setup
@@ -55,7 +55,8 @@ class UserTest < ActiveSupport::TestCase
     end
 
     test "password should have a minimum length" do
-        @user.password = "a" * 5
+        @user.password = "a" * 1
+        @user.password_confirmation = "a" * 1
         assert_not @user.valid?
     end
 
