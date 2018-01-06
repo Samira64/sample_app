@@ -10,16 +10,16 @@ class UsersController < ApplicationController
   def create
     @user = User.new(set_params)
     if @user.save
-        flash[:success] = "Welcome to the Sample Application"
-        redirect_to user_url(@user)
+      log_in @user
+      flash[:success] = "Welcome to the Sample Application"
+      redirect_to user_url(@user)
     else
-        render "new"
+      render "new"  
     end
   end
 
   private
-      def set_params
-        params.require(:user).permit(:name,:email,:password,:password_confirmation)
-      end
-
+  def set_params
+    params.require(:user).permit(:name,:email,:password,:password_confirmation)
+  end
 end
