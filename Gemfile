@@ -23,7 +23,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-
+gem 'pry-rails'
 gem "autoprefixer-rails"
 
 
@@ -43,7 +43,6 @@ group :development do
   gem 'spring'
   gem 'guard-test'
   gem 'guard-rspec'
-  gem 'pry-rails'
 end
 
 gem 'rake'
